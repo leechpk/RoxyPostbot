@@ -132,7 +132,7 @@ PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001740524004'))
 
 #Newfeatures vars developer - Anshvachhani99 ✨🌸
 DIRECT_GEN_DB = int(os.environ.get("DIRECT_GEN_DB", "-1001870553067"))
-DIRECT_GEN_URL = os.environ.get("DIRECT_GEN_URL", "https://hurt-roze-techbots203-0faa3a2a.koyeb.app")
+DIRECT_GEN_URL = os.environ.get("DIRECT_GEN_URL", "https://fileshare9900.koyeb.app/")
 DIRECT_GEN = bool(DIRECT_GEN_DB and DIRECT_GEN_URL)
 
 POST_MODE= bool(environ.get('POST_MODE', True))

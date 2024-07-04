@@ -136,8 +136,8 @@ DIRECT_GEN_URL = os.environ.get("DIRECT_GEN_URL", "https://fileshare9900.koyeb.a
 DIRECT_GEN = bool(DIRECT_GEN_DB and DIRECT_GEN_URL)
 
 POST_MODE= bool(environ.get('POST_MODE', True))
-POST_SHORT_API = environ.get('POST_SHORT_API', '11b8c0a923e3945e6406353bd33d9b4da4f4b9b4')
-POST_SHORT_URL = environ.get('POST_SHORT_URL', 'gplinks.com')
+POST_SHORT_API = environ.get('POST_SHORT_API', '')
+POST_SHORT_URL = environ.get('POST_SHORT_URL', '')
 
 HOW_TO_POST_SHORT = environ.get('HOW_TO_POST_SHORT', 'https://t.me/Howtodowloa/13')
 

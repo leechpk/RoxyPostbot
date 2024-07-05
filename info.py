@@ -131,7 +131,7 @@ else:
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001740524004'))
 
 #Newfeatures vars developer - Anshvachhani99 ✨🌸
-DIRECT_GEN_DB = int(os.environ.get("DIRECT_GEN_DB", "-1001740524004")
+DIRECT_GEN_DB = int(os.environ.get("DIRECT_GEN_DB", "-1001740524004"))
 DIRECT_GEN_URL = os.environ.get("DIRECT_GEN_URL", "https://roxylinkzz-filter-bot.koyeb.app/")
 DIRECT_GEN = bool(DIRECT_GEN_DB and DIRECT_GEN_URL)
 

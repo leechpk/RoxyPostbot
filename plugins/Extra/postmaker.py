@@ -23,7 +23,7 @@ async def delete_previous_reply(chat_id):
 @Client.on_message(filters.command("post") & filters.user(ADMINS))
 async def post_command(client, message):
     try:
-        await message.reply("**ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴜsᴇ ᴏᴜʀ ʀᴀʀᴇ ᴍᴏᴠɪᴇ ᴘᴏsᴛ ғᴇᴀᴛᴜʀᴇ:) ᴄᴏᴅᴇ ʙʏ [ᴀɴsʜ ᴠᴀᴄʜʜᴀɴɪ](https://t.me/MovieGroup_Support) 👨‍💻**\n\n**👉🏻sᴇɴᴅ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴏғ ғɪʟᴇs ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀᴅᴅ👈🏻**\n\n**‼️ ɴᴏᴛᴇ : ᴏɴʟʏ ɴᴜᴍʙᴇʀ**", disable_web_page_preview=True)
+        await message.reply("**Wᴇʟᴄᴏᴍᴇ Tᴏ Usᴇ Oᴜʀ Rᴀʀᴇ Mᴏᴠɪᴇ Pᴏsᴛ Fᴇᴀᴛᴜʀᴇ:) Cᴏᴅᴇ ʙʏ [Rᴏxʏ ʟɪɴᴋᴢᴢ](https://t.me/PKlinkzz_admin_bot) 👨‍💻**\n\n**👉🏻Sᴇɴᴅ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴏғ ғɪʟᴇs ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀᴅᴅ👈🏻**\n\n**‼️ ɴᴏᴛᴇ : Oɴʟʏ ɴᴜᴍʙᴇʀ**", disable_web_page_preview=True)
         user_states[message.chat.id] = {"state": "awaiting_num_files"}
     except Exception as e:
         await message.reply(f"Error occurred: {e}")
@@ -45,7 +45,7 @@ async def handle_message(client, message):
                     num_files = int(message.text.strip())
 
                     if num_files <= 0:
-                        rply = await message.reply("⏩ ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ")
+                        rply = await message.reply("⏩ Fᴏʀᴡᴀʀᴅ ᴛʜᴇ ғɪʟᴇ")
                         user_states[chat_id]["last_reply"] = rply
                         return
 
@@ -58,7 +58,7 @@ async def handle_message(client, message):
                         "stream_links": []
                     }
 
-                    reply_message = await message.reply("**⏩ ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ɴᴏ: 1 ғɪʟᴇ**")
+                    reply_message = await message.reply("**⏩ Fᴏʀᴡᴀʀᴅ ᴛʜᴇ ɴᴏ: 1 ғɪʟᴇ**")
                     user_states[chat_id]["last_reply"] = reply_message
                         
                 except ValueError:
@@ -88,10 +88,10 @@ async def handle_message(client, message):
 
                 if num_files_left > 0:
                     files_text = "ғɪʟᴇ" if files_received == 1 else "ғɪʟᴇs"
-                    reply_message = await message.reply(f"**⏩ ғᴏʀᴡᴀʀᴅ ᴛʜᴇ ɴᴏ: {files_received + 1} {files_text}**")
+                    reply_message = await message.reply(f"**⏩ Fᴏʀᴡᴀʀᴅ ᴛʜᴇ ɴᴏ: {files_received + 1} {files_text}**")
                     user_states[chat_id]["last_reply"] = reply_message                     
                 else:
-                    reply_message = await message.reply("**ɴᴏᴡ sᴇɴᴅ ᴛʜᴇ ɴᴀᴍᴇ ᴏғ ᴛʜᴇ ᴍᴏᴠɪᴇ**\n\n**ᴇx : ʟᴏᴠᴇʀ 𝟸𝟶𝟸𝟺 ʜɪɴᴅɪ ᴡᴇʙᴅʟ**")                    
+                    reply_message = await message.reply("**ɴᴏᴡ sᴇɴᴅ ᴛʜᴇ ɴᴀᴍᴇ ᴏғ ᴛʜᴇ ᴍᴏᴠɪᴇ (ᴏʀ) ᴛɪᴛʟᴇ **\n\n**ᴇx : ʟᴏᴠᴇʀ 𝟸𝟶𝟸𝟺 ᴛᴀᴍɪʟ ᴡᴇʙᴅʟ**")                    
                     user_states[chat_id]["state"] = "awaiting_title"
                     user_states[chat_id]["last_reply"] = reply_message
                     
@@ -107,7 +107,7 @@ async def handle_message(client, message):
                 for i, file_id in enumerate(user_states[chat_id]["file_ids"]):
                     long_url = f"https://t.me/{temp.U_NAME}?start=file_{file_id[0]}"
                     short_link_url = await short_link(long_url)
-                    file_info.append(f"{user_states[chat_id]['file_sizes'][i]} : {short_link_url}")
+                    file_info.append(f"》{user_states[chat_id]['file_sizes'][i]} : {short_link_url}")
                 
                 file_info_text = "\n\n".join(file_info)
 
@@ -115,10 +115,10 @@ async def handle_message(client, message):
                 for i, stream_link in enumerate(user_states[chat_id]["stream_links"]):
                     long_stream_url = stream_link[0]
                     short_stream_link_url = await short_link(long_stream_url)
-                    stream_links_info.append(f"{user_states[chat_id]['file_sizes'][i]} : {short_stream_link_url}")
+                    stream_links_info.append(f"》{user_states[chat_id]['file_sizes'][i]} : {short_stream_link_url}")
                 
                 stream_links_text = "\n\n".join(stream_links_info)                
-                summary_message = f"**🎬{title}**\n\n**Genre 🎥 - {imdb_data.get('genres')}**\n\n**✅ Note : [How to download]({HOW_TO_POST_SHORT})**\n\n**🔻 Direct Telegram Files 🔻**\n\n**{file_info_text}**\n\n**🔻 Stream/Fast Download 🔻**\n\n**{stream_links_text}**\n\n**@PK_LinkZz**"
+                summary_message = f"**🎬{title}**\n\n**Gᴇɴʀᴇ 🎥 - {imdb_data.get('genres')}**\n\n**✅ Note : [ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ]({HOW_TO_POST_SHORT})**\n\n**🔻 ᴅɪʀᴇᴄᴛ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇs 🔻**\n\n**{file_info_text}**\n\n**🔻 sᴛʀᴇᴀᴍ/ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ 🔻**\n\n**{stream_links_text}**\n\n**𖤍 Uᴘʟᴏᴀᴅᴇᴅ ʙʏ 𓆩♱𓆪 @Roxy_LinkZz**"
                 summary_messages = f"{title_clean}, {cleaned_title}"
                 if poster:
                     await message.reply_photo(poster, caption=summary_message)

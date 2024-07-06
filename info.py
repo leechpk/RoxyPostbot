@@ -57,11 +57,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
-HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/Howtodowloa/13') # How to open tutorial link for verification
+HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/Howtodowloa/9') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gplinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '11b8c0a923e3945e6406353bd33d9b4da4f4b9b4')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '6a0a4f826e12f701a433063ebbe730caa1c29c38')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")

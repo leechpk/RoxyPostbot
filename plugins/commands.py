@@ -23,7 +23,7 @@ async def delete_previous_reply(chat_id):
 @Client.on_message(filters.command("post") & filters.user(ADMINS))
 async def post_command(client, message):
     try:
-        await message.reply("**ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴜsᴇ ᴏᴜʀ ʀᴀʀᴇ ᴍᴏᴠɪᴇ ᴘᴏsᴛ ғᴇᴀᴛᴜʀᴇ:) ᴄᴏᴅᴇ ʙʏ [ᴀɴsʜ ᴠᴀᴄʜʜᴀɴɪ](https://t.me/MovieGroup_Support) 👨‍💻**\n\n**👉🏻sᴇɴᴅ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴏғ ғɪʟᴇs ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀᴅᴅ👈🏻**\n\n**‼️ ɴᴏᴛᴇ : ᴏɴʟʏ ɴᴜᴍʙᴇʀ**", disable_web_page_preview=True)
+        await message.reply("**Wᴇʟᴄᴏᴍᴇ Tᴏ Usᴇ Oᴜʀ Rᴀʀᴇ Mᴏᴠɪᴇ Pᴏsᴛ Fᴇᴀᴛᴜʀᴇ:) Cᴏᴅᴇ ʙʏ [Rᴏxʏ ʟɪɴᴋᴢᴢ](https://t.me/PKlinkzz_admin_bot) 👨‍💻**\n\n**👉🏻Sᴇɴᴅ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴏғ ғɪʟᴇs ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀᴅᴅ👈🏻**\n\n**‼️ Nᴏᴛᴇ : Oɴʟʏ ɴᴜᴍʙᴇʀ**", disable_web_page_preview=True)
         user_states[message.chat.id] = {"state": "awaiting_num_files"}
     except Exception as e:
         await message.reply(f"Error occurred: {e}")

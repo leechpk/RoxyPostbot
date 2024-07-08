@@ -248,7 +248,7 @@ Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     » Nᴇᴡ Uᴘᴅᴀᴛᴇs : @PK_LinkZz
     
     » Mᴏᴠɪᴇ Rᴇϙᴜᴇsᴛ 24×7 :
-@tamil_movie_request_groupx <b>"""
+https://t.me/+mC71XsQcq2ZmY2Vl <b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.

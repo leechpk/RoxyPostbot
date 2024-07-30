@@ -107,7 +107,7 @@ async def handle_message(client, message):
                 for i, file_id in enumerate(user_states[chat_id]["file_ids"]):
                     long_url = f"https://t.me/{temp.U_NAME}?start=file_{file_id[0]}"
                     short_link_url = await short_link(long_url)
-                    file_info.append(f"{user_states[chat_id]['file_sizes'][i]} : {short_link_url}")
+                    file_info.append(f"》{user_states[chat_id]['file_sizes'][i]} : {short_link_url}")
                 
                 file_info_text = "\n\n".join(file_info)
 

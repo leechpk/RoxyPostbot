@@ -118,7 +118,7 @@ async def handle_message(client, message):
                     stream_links_info.append(f"》{user_states[chat_id]['file_sizes'][i]} : {short_stream_link_url}")
                 
                 stream_links_text = "\n\n".join(stream_links_info)                
-                summary_message = f"**🎬{title}**\n\n**Gᴇɴʀᴇ 🎥 - {imdb_data.get('genres')}**\n\n**✅ Note : [ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ]({HOW_TO_POST_SHORT})**\n\n**🔻 ᴅɪʀᴇᴄᴛ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇs 🔻**\n\n**{file_info_text}**\n\n**🔻 sᴛʀᴇᴀᴍ/ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ 🔻**\n\n**{stream_links_text}**\n\n**𖤍 Uᴘʟᴏᴀᴅᴇᴅ ʙʏ 𓆩♱𓆪 @Roxy_LinkZz**"
+                summary_message = f"**🎬{title} HDRip**\n\n**🔊Aᴜᴅɪᴏ : Tᴀᴍɪʟ**\n\n**𖤍 Uᴘʟᴏᴀᴅᴇᴅ ʙʏ 𓆩♱𓆪 @Roxy_LinkZz**\n\n**🔻 ᴅɪʀᴇᴄᴛ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇs 🔻**\n\n**{file_info_text}**\n\n**✅ Note : [Hᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ]({HOW_TO_POST_SHORT})👀**\n\n**🔻 Sᴛʀᴇᴀᴍ/Fᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ 🔻**\n\n**{stream_links_text}**\n\n**✅ Note : [Hᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ]({HOW_TO_POST_SHORT})👀**\n\n**Mᴏᴠɪᴇ Gʀᴏᴜᴘ 𝟸𝟺/𝟽 : [Cʟɪᴄᴋ ʜᴇʀᴇ]({https://t.me/+EmZHSiPLt7xjY2Fl})**\n\n**Fɪʟᴇ ғᴏʀᴍᴀᴛ : [Cʟɪᴄᴋ ʜᴇʀᴇ]({https://t.me/+CL7pjIP_rJtlYzZl})**ー𖤍 𓆩 sʜᴀʀᴇ ᴡɪᴛʜ ғʀɪᴇɴᴅs 𓆪 𖤍ー**"
                 summary_messages = f"{title_clean}, {cleaned_title}"
                 if poster:
                     await message.reply_photo(poster, caption=summary_message)

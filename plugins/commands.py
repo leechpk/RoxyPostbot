@@ -115,7 +115,7 @@ async def handle_message(client, message):
                 for i, stream_link in enumerate(user_states[chat_id]["stream_links"]):
                     long_stream_url = stream_link[0]
                     short_stream_link_url = await short_link(long_stream_url)
-                    stream_links_info.append(f"》{user_states[chat_id]['file_sizes'][i]} : {short_stream_link_url}")
+                    stream_links_info.append(f"》{user_states[chat_id]['file_sizes'][i]} : [ᴄʟɪᴄᴋ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ]{short_stream_link_url}")
                 
                 stream_links_text = "\n\n".join(stream_links_info)                
                 summary_message = f"**🎬{title} Tamil HDRip**\n\n**𓆩🔻𓆪 Dɪʀᴇᴄᴛ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs Oɴʟʏ👇**\n\n**{file_info_text}**\n\n**✅ Note : [Hᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ]({HOW_TO_POST_SHORT})👀**\n\n**𓆩🔻𓆪 Sᴛʀᴇᴀᴍ/Fᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ 👇**\n\n**{stream_links_text}**\n\n**✅ Note : [Hᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ]({HOW_TO_POST_SHORT})👀**\n\n**Mᴏᴠɪᴇ Gʀᴏᴜᴘ 𝟸𝟺/𝟽 : @Roxy_Request_24_7**\n\n**❤️‍🔥ー𖤍 𓆩 sʜᴀʀᴇ ᴡɪᴛʜ ғʀɪᴇɴᴅs 𓆪 𖤍ー❤️‍🔥**"
